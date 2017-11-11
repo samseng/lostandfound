@@ -35,7 +35,7 @@ Function done:
 -
 
 Guidelines for using GitHub is here: https://guides.github.com/activities/hello-world/
-Simple guidelines:
+Simple guidelines using GUI:
 Changes that are 'sure' can be made in the master branch:
 1.Just click on the file you want to change.
 2. Then click the pencil symbol.
