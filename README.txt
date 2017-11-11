@@ -36,8 +36,11 @@ Function done:
 
 Guidelines for using GitHub is here: https://guides.github.com/activities/hello-world/
 Simple guidelines:
-1.Changes that are 'sure' can be made in the master branch.
-2.Just click on the file you want to change.
-3. Then click the pencil symbol.
-4.Change the file.
-5.Commit the changes.
+Changes that are 'sure' can be made in the master branch:
+1.Just click on the file you want to change.
+2. Then click the pencil symbol.
+3.Change the file.
+4.Commit the changes.
+5. Choose the commit directly to the master branch.
+
+Changes that are not sure and require to ask others for opinion can be made in other branch(which is the duplicate of the master branch):
