@@ -48,3 +48,5 @@ Changes that are not sure and require to ask others for opinion can be made in o
 2. Made new branch by filling new name in the text field.
 3.Create new file/Upload new file/Update the existing file and do the changes as you like.
 4. Commit the changes.
+5. Click the compare & pull request, to compare the changes and also able to let others review the changes and comment on it.
+6. If you the changes is satisfied, the click the merge branch to merge the new branch with master so that the changes is applied in the main.
