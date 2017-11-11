@@ -50,3 +50,4 @@ Changes that are not sure and require to ask others for opinion can be made in o
 4. Commit the changes, click back to lostandfound.
 5. Click the compare & pull request, to compare the changes and also able to let others review the changes and comment on it.
 6. If you the changes is satisfied, the click the merge branch to merge the new branch with master so that the changes is applied in the main.
+7.Delete the branch, if you don't want to change it anymore.
