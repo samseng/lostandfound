@@ -35,7 +35,7 @@ Function done:
 -
 
 Guidelines for using GitHub is here: https://guides.github.com/activities/hello-world/
-Simple guidelines:
+Simple guidelines using GUI:
 Changes that are 'sure' can be made in the master branch:
 1.Just click on the file you want to change.
 2. Then click the pencil symbol.
@@ -50,3 +50,4 @@ Changes that are not sure and require to ask others for opinion can be made in o
 4. Commit the changes, click back to lostandfound.
 5. Click the compare & pull request, to compare the changes and also able to let others review the changes and comment on it.
 6. If you the changes is satisfied, the click the merge branch to merge the new branch with master so that the changes is applied in the main.
+7.Delete the branch, if you don't want to change it anymore.
