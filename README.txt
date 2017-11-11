@@ -44,3 +44,5 @@ Changes that are 'sure' can be made in the master branch:
 5. Choose the commit directly to the master branch.
 
 Changes that are not sure and require to ask others for opinion can be made in other branch(which is the duplicate of the master branch):
+1.Create new branch by clicking on the branch droplist.
+2. Made new branch by filling new name in the text field.
