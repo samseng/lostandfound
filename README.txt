@@ -34,3 +34,10 @@ Function needed:
 Function done:
 -
 
+Guidelines for using GitHub is here: https://guides.github.com/activities/hello-world/
+Simple guidelines:
+1.Changes that are 'sure' can be made in the master branch.
+2.Just click on the file you want to change.
+3. Then click the pencil symbol.
+4.Change the file.
+5.Commit the changes.
