@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<title>Upload Form</title>
-	<link rel="stylesheet" type="text/css" href="upload2.css" />
+	<link rel="stylesheet" type="text/css" href="upload-form.css" />
 	<link href="img/favicon.png" type="image/png" rel="shortcut icon" />
 </head>
 
