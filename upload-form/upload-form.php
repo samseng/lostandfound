@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<title>Upload Form</title>
-	<link rel="stylesheet" type="text/css" href="upload.css" />
+	<link rel="stylesheet" type="text/css" href="upload2.css" />
 	<link href="img/favicon.png" type="image/png" rel="shortcut icon" />
 </head>
 
@@ -21,9 +21,12 @@
 
 		<div class="form-section">
 			<p>Please fill in this details properly.</p>
-			<form action="view.php" method="post" enctype="multipart/form-data">
+			
 				<div id='form'>
+				<form action="" method="post" enctype="multipart/form-data">
 				<ul>
+				<li>Uploader's ID : </li>
+				<input type="text" name="id" size="20" maxlength="15" placeholder="Student ID/Staff ID"/>
 				<li>Choose image file:</li>
 				<input type="file" name="file" accept=".jpg, .jpeg, .png, .gif" /> </br>
 				<li>Item Name :</li>
@@ -42,10 +45,66 @@
 				<div id="submitbutton">
 				<input type="submit" name="upload" value="Upload" />	
 				</div>
+				</form>
 				</div>
-			</form>
+			
 		</div>
 
+		<?php
+	$username="root";
+	$password="root";
+	$database="lnf";
+
+    //database handling sides.
+    // Create connection
+	$conn = mysqli_connect("localhost", $username, $password,$database);
+
+    // Check connection
+	if (!$conn) {
+ 	      die("Connection failed: " . mysqli_connect_error());
+ 	   }
+	echo "Connected successfully..."; 
+
+	if(isset($_POST['upload']))
+{
+	$item_name = $_POST['item'];
+	$contact_no = $_POST['no'];
+	$uploader_id = $_POST['id'];
+	$category = $_POST['tag'];
+	echo $category;
+	$image = 'test';
+
+	$sql="INSERT INTO item(title,category,image) VALUES('$item_name','$category','$image')";
+	if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+$sql="INSERT INTO uploader(id,contact_no) VALUES('$uploader_id','$contact_no')";
+	if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+$sql="SELECT max(id) FROM item";
+ $result_set=mysqli_query($conn,$sql);
+while($row=mysqli_fetch_assoc($result_set))
+ {
+ 	echo $row['max(id)'];
+ 	$item_id = $row['max(id)'];
+ 	}
+
+$sql="INSERT INTO post(image_id,uploader_id) VALUES('$item_id','$uploader_id')";
+	if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+}
+ ?>
 	</div> <!-- Float right end -->
 		</div>
 </body>
