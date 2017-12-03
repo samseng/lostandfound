@@ -1,38 +1,36 @@
 LNF Project:
 4 pages:
 1. Main Page :
-Name:
+Name:project.php
 Function needed:
--
-
-Function done:
+-Link to each page(done)
+-Display latest image(done)
+-Search and link to search page image(done)
 -
 
 2. Upload Page:
-Name:upload-form.php
+Name:upload2.php
 Function needed:
--File image upload
+-File image upload(done)
 -Form verification
--Save data in database
-
-Function done:
--
+-Save data in database(done)
+-Link to main page
 
 3. Delete Page:
-Name:
+Name:delete.php
 Function needed:
--
-
-Function done:
--
+-Search and display image based on student id
+-Image/Post deletion in database
+-Image deletion in display
 
 4. Search Page:
-Name:
+Name:searchpage.php
 Function needed:
--
-
-Function done:
--
+-Display image as row (4X3)(done)
+-Search images by title(done)
+-Page numbering for results(done)
+-Tag (for item) -search
+-Tag for date - search
 
 Guidelines for using GitHub is here: https://guides.github.com/activities/hello-world/
 Simple guidelines using GUI:
