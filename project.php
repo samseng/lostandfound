@@ -83,7 +83,7 @@ session_start();
 
 	}
 	//database section -- printing image,title, and contact no.
-	//get the latest post and limit it by 3
+	//get the latest post and limit it by 3-display latest image
 	 $sql="SELECT * FROM post ORDER BY date DESC LIMIT 3";
  	$result_set=mysqli_query($conn,$sql);
  	while($row3 = mysqli_fetch_assoc($result_set)){
