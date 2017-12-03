@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 	<title>Upload Form</title>
-	<link rel="stylesheet" type="text/css" href="upload-form.css" />
+	<link rel="stylesheet" type="text/css" href="upload2.css" />
 	<link href="img/favicon.png" type="image/png" rel="shortcut icon" />
 </head>
 
@@ -67,14 +67,20 @@
 
 	if(isset($_POST['upload']))
 {
+	//added item for file and move the file to upload image.
 	$item_name = $_POST['item'];
 	$contact_no = $_POST['no'];
 	$uploader_id = $_POST['id'];
 	$category = $_POST['tag'];
+	$file = rand(1000,100000)."-".$_FILES['file']['name'];
+ 	$file_loc = $_FILES['file']['tmp_name'];
+ 	$folder="post/";
+
+ 	move_uploaded_file($file_loc,$folder.$file);
 	echo $category;
 	$image = 'test';
 
-	$sql="INSERT INTO item(title,category,image) VALUES('$item_name','$category','$image')";
+	$sql="INSERT INTO item(title,category,image) VALUES('$item_name','$category','$file')";
 	if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
 } else {
