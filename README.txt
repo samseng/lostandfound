@@ -32,6 +32,9 @@ Function needed:
 -Tag (for item) -search
 -Tag for date - search
 
+5. Image Storage
+-Post Folder
+
 Guidelines for using GitHub is here: https://guides.github.com/activities/hello-world/
 Simple guidelines using GUI:
 Changes that are 'sure' can be made in the master branch:
